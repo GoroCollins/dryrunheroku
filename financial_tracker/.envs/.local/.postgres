@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=financial_tracker
+POSTGRES_USER=dmXjbVEJKbHfUCRNvwgHSIOcQKukUkhN
+POSTGRES_PASSWORD=X783V3CRwK9OPjYHPVALtVPSaIiDLwPX5SpvLPjHjifXwAZg2e3Mvm0iPWgCriei
