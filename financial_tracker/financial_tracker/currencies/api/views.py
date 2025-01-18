@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 class CurrencyViewSet(viewsets.ModelViewSet):
     queryset = Currency.objects.all()
     serializer_class = CurrencySerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['is_local']  # Enable filtering by `is_local`
     #lookup_field = 'code'  # Use the `code` field as the lookup field
@@ -41,7 +41,7 @@ class CurrencyViewSet(viewsets.ModelViewSet):
 class ExchangeRateViewSet(viewsets.ModelViewSet):
     queryset = ExchangeRate.objects.all()
     serializer_class = ExchangeRateSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['currency']  # Enable filtering by `currency`
 
